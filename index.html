@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class = "grid-view">
+    <header>
+        <h1> Books Library </h1>
+    </header>
+    <main>
+        <div class="controls">
+            <!-- search bar -->
+            <div class="search-bar">
+                <input type="text" id="search-input" name="search" placeholder="Search a book" >
+                <button type="button" id="search-btn">Search</button>
+            </div>
+            <!-- list vs grid views -->
+            <div class="view-toggle">
+                <button id="list-view" aria-label="List-View">List view</button>
+                <button id="grid-view" aria-label="Grid-View">Grid view</button>
+            </div>
+            <!-- sort  options  -->
+             <div class="sort-options">
+                <select id="sort-select">
+                    <option value="title-asc">Sort by title (A-Z)</option>
+                    <option value="title-desc">Sort by title(Z-A)</option>
+                    <option value="date-desc">Sort by Published Date (Newest First)</option>
+                    <option value="date-asc">Sort by Published Date (Oldest First)</option>
+                </select>
+             </div>
+        </div>
+        <!-- Displaying books -->
+        <div id="book-container"></div>
+
+        <!-- pagination -->
+         <div class="pagination">
+            <button id="load-more" aria-label="Load More">Load More</button>
+         </div> 
+         
+         
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
